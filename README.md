@@ -55,7 +55,7 @@
 
 克隆项目文件:
 
-    git clone https://github.com/zuiidea/antd-admin.git
+    git clone https://github.com/wz-one-piece/Antd-Demo.git
 
 进入目录安装依赖:
 
