@@ -91,6 +91,23 @@ function Routers({ history, app }) {
 			        })
 	      	}} />
       	</Route>
+      	<Route path='relation'>
+      		<Route 
+		      	path="graph" 
+		      	getComponent={(nextState, cb) => {
+			        require.ensure([], require => {
+			        	registerModel(app, require('./models/graph'))
+			          cb(null, require('./routes/relation/Graph/'))
+			        })
+	      	}} />
+	      	<Route 
+		      	path="pullThrough" 
+		      	getComponent={(nextState, cb) => {
+			        require.ensure([], require => {
+			          cb(null, require('./routes/relation/PullThrough/'))
+			        })
+	      	}} />
+      	</Route>
       	<Route 
 	      	path="login" 
 	      	getComponent={(nextState, cb) => {

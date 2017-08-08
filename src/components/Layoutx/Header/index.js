@@ -13,7 +13,7 @@ const Header = ({user, logout, location}) => {
   return (
     <div className={styles.header}>
     	<Row>
-	      <Col lg={8} xs={12}>
+	      <Col lg={4} xs={12}>
 	      	<Link to="/" className={styles.header__logo}>
 	      		<img alt={'logo'} src={config.logo} />
             <span>{config.name}</span>

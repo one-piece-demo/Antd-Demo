@@ -1,0 +1,75 @@
+/*
+wuzhong
+*/
+
+:global{
+	.tooltips{
+	  position: absolute;
+	  max-width: 150px;
+	  height: auto;
+	  font-family: '微软雅黑';
+	  font-size: 14px;
+	  color: #fff;
+	  text-align: left;
+	  /*border: 1px solid #999;*/
+	  background: rgba(0,0,0,0.5);
+	  border-radius: 3px;
+	  /*box-shadow: 3px 3px 1px #999;*/
+	  padding: 8px;
+	  display:none;
+	  word-wrap:break-word;
+	  word-break:break-all;
+	  z-index:4;
+	}
+	.company-atlas-chart {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		min-height: 300px;
+		.atlas-chart-box {
+			width: 100%;
+			height: 100%;
+			min-height: 300px;
+		}
+
+		#atlas-chart {
+			cursor: move;
+		}
+
+		.link {
+	    fill: none;
+	    stroke-width: 1.5px;
+	  }
+	  .node {
+	    font-size: 10px;
+	    // pointer-events: none;
+	    cursor: pointer;
+	   	circle {
+		    stroke: #fff;
+		    stroke-width: 1.5px;
+			}
+			&:hover {
+				circle {
+					stroke-width: 3px;
+				}
+				.node-text {
+					font-weight: bold;
+				}
+			}
+		}
+		.node_breath {
+			animation: breathing 2s ease infinite
+		}
+		@keyframes breathing {
+			0% {
+				stroke-width: 0;
+	    	stroke-opacity: 1;
+			}
+
+			100% {
+				stroke-width: 10px;
+	    	stroke-opacity: 0;
+			}
+		}
+	}
+}

@@ -34,9 +34,14 @@ const App = ({ children, dispatch, app, loading, location }) => {
   }
 	
 	const menuProps = {
-		menu,
-		handleClickNavMenu: toggle
+		menu
 	}
+
+  //web app
+  const menuProps1 = {
+    menu,
+    handleClickNavMenu: toggle
+  }
 	
 	const breadProps = {
 		menu
@@ -81,7 +86,7 @@ const App = ({ children, dispatch, app, loading, location }) => {
       <Layout>
         <Header {...headerProps} />
         <div>
-        	{isNavbar ? <Popover placement="bottomLeft" onVisibleChange={toggle} visible={isCollapsed} overlayClassName={styles.popovermenu} trigger="click" content={<Menux {...menuProps} />}>
+        	{isNavbar ? <Popover placement="bottomLeft" onVisibleChange={toggle} visible={isCollapsed} overlayClassName={styles.popovermenu} trigger="click" content={<Menux {...menuProps1} />}>
 	          <div className={styles.slider_btn} onClick={toggle}>
 		          <Icon
 		            className="trigger"

@@ -23,35 +23,58 @@ let database = [
     route: '/user/:id',
   },
   {
-    id: '5',
+    id: '3',
     bpid: '1',
     name: 'Recharts',
     icon: 'code-o',
   },
   {
-    id: '51',
-    bpid: '5',
-    mpid: '5',
+    id: '31',
+    bpid: '3',
+    mpid: '3',
     name: 'LineChart',
     icon: 'line-chart',
     route: '/recharts/lineChart',
   },
   {
-    id: '52',
-    bpid: '5',
-    mpid: '5',
+    id: '32',
+    bpid: '3',
+    mpid: '3',
     name: 'BarChart',
     icon: 'bar-chart',
     route: '/recharts/barChart',
   },
   {
-    id: '53',
-    bpid: '5',
-    mpid: '5',
+    id: '33',
+    bpid: '3',
+    mpid: '3',
     name: 'AreaChart',
     icon: 'area-chart',
     route: '/recharts/areaChart',
   },
+
+  {
+    id: '4',
+    bpid: '1',
+    name: 'relation',
+    icon: 'code-o',
+  },
+  {
+    id: '41',
+    bpid: '4',
+    mpid: '4',
+    name: 'Graph',
+    icon: 'dot-chart',
+    route: '/relation/graph',
+  },
+  {
+    id: '42',
+    bpid: '4',
+    mpid: '4',
+    name: 'IDPullThrough',
+    icon: 'api',
+    route: '/relation/pullThrough',
+  }
 ]
 
 module.exports = {

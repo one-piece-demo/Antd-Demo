@@ -77,7 +77,7 @@ const queryArray = (array, key, keyAlias = 'key') => {
  * 数组格式转树状结构
  * @param   {array}     array
  * @param   {String}    id
- * @param   {String}    pid
+ * @param   {String}    pid 
  * @param   {String}    children
  * @return  {Array}
  */
