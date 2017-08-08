@@ -18,6 +18,8 @@
 
 ## 开发构建
 
+![](http://i.imgur.com/wyooR3o.png)
+
 ### 目录结构
 
 ```bash
