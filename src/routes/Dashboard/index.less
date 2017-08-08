@@ -1,0 +1,54 @@
+@import "../../themes/vars.less";
+
+:global {
+  .ant-card {
+    border-radius: 0;
+    margin-bottom: 24px;
+    background: #fff;
+    border-radius: 2px;
+    font-size: 12px;
+    position: relative;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+}
+
+.dashboard {
+    .card_title {
+        .card_title_icon {
+            font-size: 26px;
+            margin-right: 16px;
+        }
+    }
+    .number_count {
+        font-size: 24px;
+        height: 32px;
+        line-height: 32px;
+        margin:0 16px;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        .error {
+            margin-left: 8px;
+            font-size: 20px;
+            .error();
+        }
+    }
+    .chartBox {
+//      height: 320px;
+        border-radius: 6px;
+//      margin-bottom: 24px;
+//      background-color: #FFFFFF;
+    }
+    
+    .chartBox_map {
+        height: 460px;
+        border-radius: 6px;
+//      margin-bottom: 24px;
+//      background-color: #FFFFFF;
+    }
+}

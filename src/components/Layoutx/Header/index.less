@@ -1,0 +1,48 @@
+@import "../../../themes/vars.less";
+
+:global .ant-menu-horizontal {
+    & > .ant-menu-submenu {
+      float: right;
+    }
+    border: none;
+    display: inline-block;
+}
+
+.header {
+  background-color: #fff;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 8px;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: @primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.header__logo {
+  display: block;
+  font-size: 18px;
+  padding-left: 24px;
+  height: 40px;
+  img {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    transition: @transition-ease-out;
+  }
+  span {
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.header__right {
+  line-height: 20px;
+  padding: 5px 8px;
+  float: right;
+}
