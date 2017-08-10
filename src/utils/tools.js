@@ -5,6 +5,13 @@ const numPoints = (str) => {
 	return str.replace(/(?=(?!\b)(\d{3})+$)/g,',');
 };
 
+const toRound = (digit, length) =>{
+  length = length ? parseInt(length) : 0;  
+  if (length <= 0) return Math.ceil(digit);  
+  digit = Math.ceil(digit * Math.pow(10, length)) / Math.pow(10, length);  
+  return digit;    
+}
+
 const emptyObj = (obj) => { //json 判断属性
   for (var prop in obj){
     if(obj.hasOwnProperty(prop))
@@ -145,7 +152,8 @@ util.prototype = {
   drawLineArrow,
   deepCopy,
   extend,
-  btSize
+  btSize,
+  toRound
 }
 
 const tools = new util()

@@ -104,6 +104,7 @@ function Routers({ history, app }) {
 		      	path="pullThrough" 
 		      	getComponent={(nextState, cb) => {
 			        require.ensure([], require => {
+			        	registerModel(app, require('./models/idpull'))
 			          cb(null, require('./routes/relation/PullThrough/'))
 			        })
 	      	}} />

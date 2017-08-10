@@ -2,10 +2,11 @@ const APIV1 = '/api/v1'
 const APIV2 = '/api/v2'
 
 module.exports = {
-  name: 'AntD Demo',
+  name: '',
   prefix: 'antdDemo',
   footerText: 'Ant Design && Dva  Demo  © 2017 by NARUTOne',
-  logo: '/code.png',
+  // logo: '/code.png',
+  logo: '/logo-xj.png',
   YQL: [],
   CORS: [],
   openPages: ['/login'],
@@ -21,5 +22,6 @@ module.exports = {
     menus: `${APIV1}/menus`,
     dashboard: `${APIV1}/dashboard`,
     graph: `${APIV1}/graph`,
+    pullthrough: `${APIV1}/pullthrough`,
   },
 }

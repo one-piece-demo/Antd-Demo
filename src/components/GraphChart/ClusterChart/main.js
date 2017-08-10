@@ -1,7 +1,7 @@
 import d3 from 'd3'
 
 /*
-	base on  d3.js-v4
+	base on  d3.js-v3
 */
 
 class AtlasChart {
