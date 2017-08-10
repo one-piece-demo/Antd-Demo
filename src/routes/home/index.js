@@ -15,7 +15,7 @@ function Home({home, dispatch}) {
     		<img alt={'logo'} src={config.logo} />
         <span>{config.name}</span>
     	</h1>
-      <p className={styles.title}>Yay! Welcome to antd demo!</p>
+      <p className={styles.title}>Yay! Welcome to antd dva demo!</p>
       <Button className={styles.home_go} type="primary" icon='smile-o' onClick={handleGo}> Let's go </Button>
     </div>
   );
