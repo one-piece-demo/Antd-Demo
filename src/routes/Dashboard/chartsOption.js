@@ -34,29 +34,25 @@ const LineScore = (data) => {
             name:'clothes',
             type:'line',
             smooth: true,
-            stack: '总量',
-            data:[1200, 1320, 1010, 1340, 900, 2300, 2100]
+            data:[1200, 1320, 1010, 1340, 1900, 2300, 2100]
         },
         {
             name:'foods',
             type:'line',
             smooth: true,
-            stack: '总量',
-            data:[2200, 1820, 1910, 2340, 2900, 3300, 3100]
+            data:[2200, 1820, 1910, 2340, 2900, 3300, 3200]
         },
         {
             name:'home',
             type:'line',
             smooth: true,
-            stack: '总量',
-            data:[1500, 2320, 2010, 1540, 1900, 3300, 4100]
+            data:[800, 1020, 1210, 1540, 1800, 2300, 3100]
         },
         {
             name:'travel',
             type:'line',
             smooth: true,
-            stack: '总量',
-            data:[3200, 3320, 3010, 3340, 3900, 3300, 3200]
+            data:[600, 920, 1010, 1340, 1700, 2300, 2230]
         }
     ]
 	};

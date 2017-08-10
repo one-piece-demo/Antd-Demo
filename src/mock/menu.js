@@ -52,6 +52,14 @@ let database = [
     icon: 'area-chart',
     route: '/recharts/areaChart',
   },
+  {
+    id: '34',
+    bpid: '3',
+    mpid: '3',
+    name: 'PieChart',
+    icon: 'pie-chart',
+    route: '/recharts/pieChart',
+  },
 
   {
     id: '4',

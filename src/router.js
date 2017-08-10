@@ -90,6 +90,13 @@ function Routers({ history, app }) {
 			          cb(null, require('./routes/recharts/areaChart/'))
 			        })
 	      	}} />
+	      	<Route 
+		      	path="pieChart" 
+		      	getComponent={(nextState, cb) => {
+			        require.ensure([], require => {
+			          cb(null, require('./routes/recharts/pieChart/'))
+			        })
+	      	}} />
       	</Route>
       	<Route path='relation'>
       		<Route 
