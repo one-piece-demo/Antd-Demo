@@ -57,10 +57,11 @@ export default {
           yield put(routerRedux.push('/home'))
         }
       } else {
-        if (config.homePages && config.homePages.indexOf(location.pathname) < 0 && config.openPages.indexOf(location.pathname) < 0) {
+        if (config.homePages.indexOf(location.pathname) < 0 && config.openPages.indexOf(location.pathname) < 0) {
           let from = location.pathname
           window.location = `${location.origin}/login?from=${from}`
         }
+
       }
     },
 
@@ -73,6 +74,12 @@ export default {
       } else {
         throw (data)
       }
+    },
+    *login ({
+      payload,
+    }, { call, put }) {
+      let from = location.pathname
+      window.location = `${location.origin}/login?from=${from}`
     },
      *changeNavbar ({
       payload,

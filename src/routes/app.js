@@ -26,6 +26,9 @@ const App = ({ children, dispatch, app, loading, location }) => {
     user,
     logout () {
       dispatch({ type: 'app/logout' })
+    },
+    login () {
+      dispatch({ type: 'app/login' })
     }
   }
 	

@@ -8,8 +8,15 @@ import styles from './index.less'
 
 const SubMenu = Menu.SubMenu
 
-const Header = ({user, logout, location}) => {
-	let handleClickMenu = e => e.key === 'logout' && logout()
+const Header = ({user, logout, login, location}) => {
+	let handleClickMenu = e => {
+		if(e.key === 'logout'){
+			logout()
+		} 
+		else {
+			login()
+		}
+	}
   return (
     <div className={styles.header}>
     	<Row>
@@ -26,9 +33,13 @@ const Header = ({user, logout, location}) => {
 	          }} title={< span > <Icon type="user" />
 	            {user.username} < /span>}
 	          >
-	            <Menu.Item key="logout">
-	              {user.username ? 'Sign out': 'Sign in'}
-	            </Menu.Item>
+	          	{user.username ? 
+		            <Menu.Item key="logout">
+		              Sign out
+		            </Menu.Item>
+	            : <Menu.Item key="login">
+	              Sign in
+	            </Menu.Item>}
 	          </SubMenu>
 	        </Menu>
 	      </Col>
