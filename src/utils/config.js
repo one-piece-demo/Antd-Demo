@@ -2,12 +2,12 @@ const APIV1 = '/api/v1'
 const APIV2 = '/api/v2'
 
 module.exports = {
-  name: 'ANTD DEMO',
+  name: '企业数据可视化组件',
   prefix: 'antdDemo',
-  footerText: 'Ant Design && Dva  Demo  © 2017 by NARUTOne',
-  // footerText: 'UI Design && Data visualization  © 2017',
-  logo: '/code.png',
-  // logo: '/logo-xj.png',
+  // footerText: 'Ant Design && Dva  Demo  © 2017 by NARUTOne',
+  footerText: 'UI Design && Data visualization  © 2017',
+  // logo: '/code.png',
+  logo: '/logo-xj.png',
   YQL: [],
   CORS: [],
   openPages: ['/login'],

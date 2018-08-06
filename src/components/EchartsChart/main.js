@@ -1,5 +1,5 @@
 /*
-  chart base on d3JS v3
+  chart base on Echarts 3.6.2
 */
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
